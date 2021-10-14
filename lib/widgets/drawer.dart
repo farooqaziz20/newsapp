@@ -27,7 +27,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
         child: Icon(
           link,
           color: icon,
-          size: 16,
+          size: 20,
         ),
       ),
     );
@@ -54,7 +54,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
               Text(
                 name,
                 style: TextStyle(
-                    fontSize: 13,
+                    fontSize: 16,
                     fontWeight: FontWeight.w500,
                     color: mainColorPrimary),
               )

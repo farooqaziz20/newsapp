@@ -30,6 +30,9 @@ class _NewsDetailsState extends State<NewsDetails> {
       "userId": userId,
       "news": jsonEncode(article!.toJson()),
     });
+    setState(() {
+      flag = true;
+    });
     Fluttertoast.showToast(msg: "News added to favourites");
   }
 
@@ -39,7 +42,9 @@ class _NewsDetailsState extends State<NewsDetails> {
       appBar: AppBar(
         title: const Text('Details'),
         leading: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pop(context);
+            },
             icon: Icon(Icons.arrow_back, color: mainColorSecondry)),
         backgroundColor: mainColorPrimary,
       ),
@@ -102,9 +107,6 @@ class _NewsDetailsState extends State<NewsDetails> {
                         IconButton(
                             onPressed: () {
                               if (!flag) {
-                                setState(() {
-                                  flag = true;
-                                });
                                 addtofav();
                               }
                             },

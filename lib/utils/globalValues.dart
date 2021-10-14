@@ -1,4 +1,6 @@
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:mongo_dart/mongo_dart.dart';
+import 'package:newsapp/utils/colors.dart';
 
 import 'newsAppApis/src/newsapi.dart';
 
@@ -14,3 +16,8 @@ String userId = "";
 String userName = "";
 String userEmail = "";
 String userPhoneNo = "";
+
+var spinkitglobal = SpinKitDoubleBounce(
+  color: mainColorPrimary,
+  size: 50.0,
+);

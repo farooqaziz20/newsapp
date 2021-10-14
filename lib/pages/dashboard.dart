@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:newsapp/pages/search.dart';
 
 import 'package:newsapp/utils/colors.dart';
 import 'package:newsapp/utils/globalValues.dart';
@@ -83,6 +84,14 @@ class _DashBoardState extends State<DashBoard> {
             appBar: AppBar(
               title: const Text('NEWS APP'),
               centerTitle: true,
+              actions: [
+                IconButton(
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Search()));
+                    },
+                    icon: Icon(Icons.search, color: mainColorSecondry))
+              ],
               bottom: TabBar(
                   isScrollable: true,
                   tabs: listCatagoris

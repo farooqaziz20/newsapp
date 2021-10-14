@@ -40,20 +40,8 @@ class _DashBoardWidgetState extends State<DashBoardWidget> {
       language: 'en',
     );
 
-    print(sources);
-//     var everything = await newsApi.everything(
-//       q: 'flutter',
-// //    qInTitle: qInTitle,
-// //    sources: sources,
-// //    domains: domains,
-// //    excludeDomains: excludeDomains,
-// //    from: from, // support DateTime or String
-// //    to: to, // support DateTime or String
-// //    language: language,
-// //    sortBy: sortBy,
-// //    pageSize: pageSize,
-// //    page: page,
-//     );
+  
+
     setState(() {
       listNews = everything.articles;
       isLoading = false;

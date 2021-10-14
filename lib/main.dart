@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
         accentColor: mainColorPrimaryLight,
       ),
       debugShowCheckedModeBanner: false,
-      home: const DashBoard(),
+      home: const SplashScreen(),
     );
   }
 }
